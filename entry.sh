@@ -26,8 +26,8 @@ else
     echo '$TLS_CERTIFICATE and $TLS_KEY are not set, exiting!'
     exit 1
   else
-    echo "$TLS_CERTIFICATE" > /etc/nginx/cert.pem
-    echo "$TLS_KEY" > /etc/nginx/key.pem
+    echo -e "$TLS_CERTIFICATE" > /etc/nginx/cert.pem
+    echo -e "$TLS_KEY" > /etc/nginx/key.pem
   fi
 fi
 

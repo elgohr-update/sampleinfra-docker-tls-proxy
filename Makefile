@@ -1,7 +1,7 @@
 DOCKER_REGISTRY = index.docker.io
 IMAGE_NAME = tls-proxy
 IMAGE_VERSION = latest
-IMAGE_ORG = flaccid
+IMAGE_ORG = sampleinfra
 IMAGE_TAG = $(DOCKER_REGISTRY)/$(IMAGE_ORG)/$(IMAGE_NAME):$(IMAGE_VERSION)
 
 WORKING_DIR := $(shell pwd)
