@@ -41,7 +41,7 @@ echo '> reconfigure nginx'
 sed -i "s/server localhost:80/server $UPSTREAM_HOST:$UPSTREAM_PORT/" /etc/nginx/conf.d/02-https.conf
 sed -i "s/listen 443 ssl/listen $LISTEN_PORT ssl$http2/" /etc/nginx/conf.d/02-https.conf
 sed -i "s/server_name _/server_name $SERVER_NAME/" /etc/nginx/conf.d/02-https.conf
-sed -i "s/client_max_body_size _/client_max_body_size $MAX_BODY_SIZE" /etc/nginx/conf.d/02-https.conf
+sed -i "s/client_max_body_size _/client_max_body_size $MAX_BODY_SIZE/" /etc/nginx/conf.d/02-https.conf
 
 if [ "$FORCE_HTTPS" = 'true' ]; then
   echo '>> force https'
